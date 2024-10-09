@@ -158,6 +158,13 @@ footer {
     padding: 2rem;
     text-align: center;
     color: #94a3b8;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+
 }
 
 footer a {
@@ -246,17 +253,31 @@ main hr {
     display: flex;
     justify-content: space-between;
     padding: 0 100px;
-}
+    width: 70vw;
+    margin-top: 100px;
 
-.footer ul {
-    list-style: none;
-    padding: 0;
 }
+@media (min-width: 768px) {
+    .footer-info {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
 
-.footer ul li {
-    margin-bottom: 10px;
+    .footer-info ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-info ul li {
+        margin-bottom: 5px;
+    }
+
+    .footer-info ul li a {
+        margin-right: 15px;
+    }
 }
-
 .text-centre {
     color: gray;
     text-align: center;
@@ -302,6 +323,7 @@ main hr {
     }
     .contact-form input, .contact-form textarea {
         width: 100%;
+        
     }
 }
 
@@ -487,9 +509,9 @@ a:hover, button:hover {
             <div class="footer-info">
                 <h4>Contact Information</h4>
                 <ul>
-                    <li><a href="mailto:kasaudhankajal51@gmail.com">Email</a></li>
-                    <li><a href="https://linkedin.com/in/kajal-kasaudhan-91b330273">LinkedIn</a></li>
-                    <li><a href="https://github.com/iamkajal18">Github</a></li>
+                    <li><a href="mailto:kasaudhankajal51@gmail.com" target="_blank">Email</a></li>
+                    <li><a href="https://linkedin.com/in/kajal-kasaudhan-91b330273" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/iamkajal18" target="_blank">Github</a></li>
                 </ul>
             </div>
             <div class="footer-info">
